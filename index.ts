@@ -33,4 +33,4 @@ const app = new Elysia()
   .get("/health", () => ({ status: "ok" }))
   .listen(3000);
 
-console.log(\`Pizza server running at http://localhost:\${app.server?.port}\`);
+console.log("Pizza server running on port " + app.server?.port);
